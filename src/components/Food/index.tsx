@@ -90,23 +90,23 @@ export default function Food({ food, handleEditFood, handleDelete }: Props) {
 //     };
 //   }
 
-// toggleAvailable = async () => {
-//   const { food } = this.props;
-//   const { isAvailable } = this.state;
+//   toggleAvailable = async () => {
+//     const { food } = this.props;
+//     const { isAvailable } = this.state;
 
-//   await api.put(`/foods/${food.id}`, {
-//     ...food,
-//     available: !isAvailable,
-//   });
+//     await api.put(`/foods/${food.id}`, {
+//       ...food,
+//       available: !isAvailable,
+//     });
 
-//   this.setState({ isAvailable: !isAvailable });
-// }
+//     this.setState({ isAvailable: !isAvailable });
+//   }
 
-// setEditingFood = () => {
-//   const { food, handleEditFood } = this.props;
+//   setEditingFood = () => {
+//     const { food, handleEditFood } = this.props;
 
-//   handleEditFood(food);
-// }
+//     handleEditFood(food);
+//   }
 
 //   render() {
 //     const { isAvailable } = this.state;
@@ -124,7 +124,7 @@ export default function Food({ food, handleEditFood, handleDelete }: Props) {
 //             R$ <b>{food.price}</b>
 //           </p>
 //         </section>
-//         <section className="fooder">
+//         <section className="footer">
 //           <div className="icon-container">
 //             <button
 //               type="button"
