@@ -6,8 +6,17 @@ import api from "../../services/api";
 
 interface Props {
   food: F;
-  handleEditFood: (food: F) => void;
+  handleEditFood: (food: UpdateFood) => void;
   handleDelete: (id: number) => void;
+}
+
+interface UpdateFood {
+  id?: number;
+  image: string;
+  name: string;
+  price: string;
+  description: string;
+  available?: boolean;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-redeclare
@@ -25,7 +34,7 @@ export default function Food({ food, handleEditFood, handleDelete }: Props) {
   };
 
   const setEditingFood = () => {
-    handleEditFood(food);
+    handleEditFood(food as UpdateFood);
   };
 
   return (

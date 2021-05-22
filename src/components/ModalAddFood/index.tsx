@@ -16,6 +16,7 @@ interface AddFood {
   name: string;
   price: number;
   description: string;
+  available?: boolean;
 }
 
 export default function ModalAddFood({

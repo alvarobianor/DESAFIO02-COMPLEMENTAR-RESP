@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { FiCheckSquare } from "react-icons/fi";
-
 import { Form } from "./styles";
 import Modal from "../Modal";
 import Input from "../Input";
@@ -9,13 +8,13 @@ interface Props {
   setIsOpen: () => void;
   handleUpdateFood: (data: UpdateFood) => void;
   isOpen: boolean;
-  editingFood: any;
+  editingFood: UpdateFood;
 }
 
 interface UpdateFood {
   image: string;
   name: string;
-  price: number;
+  price: string;
   description: string;
 }
 
